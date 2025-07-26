@@ -6,6 +6,6 @@ def contact(request):
         name = request.POST.get('name')
         email = request.POST.get('email')
         message = request.POST.get('message')
-        contact=Contact(name=name, email=email, message=message)
+        contact = Contact(name=name, email=email, message=message)
         contact.save()
  return render(request, 'contact.html',)
