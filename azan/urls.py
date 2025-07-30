@@ -25,4 +25,5 @@ urlpatterns = [
     path('about', veiws.about, name='about'),
     #Contact apps url
     path('contact/', include('contact.urls')),
+    path('rdr2/', include('rdr.urls')),
 ]
