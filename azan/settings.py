@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'contact.apps.ContactConfig',
+    'games.apps.GamesConfig',
+
     
 
     
@@ -120,6 +122,10 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 import os
+#<----for media --->
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+#<----for image --->
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 # Default primary key field type
